@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CouleurFont"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.major.arithmo.CurveActivity" >
+
+    <EditText
+        android:id="@+id/editVariable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editFonction"
+        android:layout_below="@+id/editFonction"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/OKvariable"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editFonction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/OKcurve"
+        android:layout_toRightOf="@+id/lblFonction"
+        android:editable="true"
+        android:focusedByDefault="true"
+        android:gravity="center_vertical"
+        android:hint="@string/curve_hint"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/lblImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editVariable"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:gravity="start|center_vertical"
+        android:text="Image f(0) = " />
+
+    <CheckBox
+        android:id="@+id/lblDerive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblImage"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblImage"
+        android:layout_marginTop="10dp"
+        android:gravity="start|center_vertical"
+        android:text="Derivation f&apos;(0) = " />
+
+    <CheckBox
+        android:id="@+id/lblPrimitive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblDerive"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblDerive"
+        android:layout_marginTop="10dp"
+        android:gravity="start|center_vertical"
+        android:text="Integration \u222B de 0 à 0 = " />
+
+    <RelativeLayout
+        android:id="@+id/relativeCurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblPrimitive"
+        android:layout_margin="5dp" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateOnly="false"
+            android:max="1000"
+            android:min="0"
+            android:progress="1000" />
+
+        <ScrollView
+            android:id="@+id/scrollCurve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignBottom="@id/progressBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/progressBar">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageCurve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher" />
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/lblExtremums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:text="Extremums :" />
+
+        <TextView
+            android:id="@+id/lblSolutions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/progressBar"
+            android:layout_margin="5dp"
+            android:text="Solutions :" />
+
+        <Spinner
+            android:id="@+id/spinnerCurve"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scrollCurve"
+            android:layout_below="@+id/progressBar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-40dp"
+            android:gravity="right|center_vertical" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblFonction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:text="Fonction f(X) = " />
+
+    <TextView
+        android:id="@+id/lblVariable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFonction"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/editVariable"
+        android:gravity="right"
+        android:text="Variable X = " />
+
+    <ImageView
+        android:id="@+id/OKcurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editFonction"
+        android:layout_alignBottom="@+id/editFonction"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_create" />
+
+    <ImageView
+        android:id="@+id/OKvariable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editVariable"
+        android:layout_alignBottom="@+id/editVariable"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_refresh" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!--item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item-->
+        <!--item name="android:actionMenuTextAppearance">@style/ActionBarStyle</item-->
+
+    </style>
+
+    <style name="ActionBarStyle" parent="android:Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@android:color/background_light</item>
+        <item name="android:itemTextAppearance">@style/ItemTextStyle</item>
+        <item name="android:titleTextAppearance">@style/TextStyle</item>
+    </style>
+    <style name="ItemTextStyle" parent="android:TextAppearance">
+        <!--item name="android:textSize">16sp</item-->
+    </style>
+    <style name="TextStyle" parent="android:TextAppearance">
+        <!--item name="android:textColor">@android:color/darker_gray</item-->
+    </style>
+
+    <color name="CouleurBordure">#BD7C63</color>
+    <color name="CouleurIn">#99D9EA</color>
+    <color name="CouleurOut">#43CD8E</color>
+    <color name="CouleurFont">#F1F5FB</color>
+
+    <color name="CouleurDark">#858585</color>
+    <color name="CouleurLight">#000000</color>
+
+</resources>

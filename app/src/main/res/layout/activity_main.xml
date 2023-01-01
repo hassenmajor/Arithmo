@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CouleurFont"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.major.arithmo.MainActivity" >
+
+    <Switch
+        android:id="@+id/swtch"
+        style="@android:style/Widget.Material.CompoundButton.Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:checked="false"
+        android:textOff="@string/radian"
+        android:textOn="@string/degree" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@android:style/Widget.Material.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/spinner"
+        android:layout_toRightOf="@+id/textBar"
+        android:max="10"
+        android:min="1"
+        android:progress="5" />
+
+    <EditText
+        android:id="@+id/textout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/spinner"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textout"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:focusedByDefault="false"
+        android:gravity="top|center_vertical"
+        android:hint="@string/text_example"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/mainBar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="10" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@android:style/Widget.DeviceDefault.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:checked="false"
+        android:gravity="center"
+        android:text="@string/fraction" />
+
+    <CheckBox
+        android:id="@+id/checkAll"
+        style="@android:style/Widget.DeviceDefault.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/checkBox"
+        android:checked="false"
+        android:gravity="center"
+        android:text="@string/all" />
+
+    <ImageView
+        android:id="@+id/mainCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textout"
+        android:layout_alignRight="@+id/textout"
+        android:layout_margin="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_copy_black" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/textin" >
+
+        <ImageView
+            android:id="@+id/OKmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_send_black" />
+
+        <EditText
+            android:id="@+id/textin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/OKmain"
+            android:background="#00000000"
+            android:editable="true"
+            android:ems="10"
+            android:focusedByDefault="true"
+            android:gravity="center_vertical"
+            android:hint="@string/main_hint"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textColorHint="#606060"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout"
+        android:gravity="left|center_vertical" >
+
+        <CheckBox
+            android:id="@+id/checkInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/interval"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/textbegin"
+            style="@android:style/Widget.Holo.EditText"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="-1110"
+            android:inputType="number|numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/textfinish"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="1110"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</RelativeLayout>

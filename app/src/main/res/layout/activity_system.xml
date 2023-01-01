@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CouleurFont"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.major.arithmo.SystemActivity" >
+
+    <EditText
+        android:id="@+id/systemin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblsystemin"
+        android:layout_margin="5dp"
+        android:background="@drawable/textin"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="1 a + 2 b + 3 c = 0 \n4 a + 5 b + 6 c = 0 \n7 a + 8 b + 9 c = 0 "
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="5"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textColorHint="#606060"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/systemout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checksystem"
+        android:layout_margin="5dp"
+        android:background="@drawable/textout"
+        android:hint="{a, b, c} = {0, 0, 0}"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checksystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/systemin"
+        android:layout_below="@+id/systemin"
+        android:checked="false"
+        android:gravity="center"
+        android:text="@string/fraction" />
+
+    <ImageView
+        android:id="@+id/systemCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/systemout"
+        android:layout_alignRight="@+id/systemout"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_copy_black" />
+
+    <TextView
+        android:id="@+id/lblsystemout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/systemout"
+        android:layout_alignLeft="@+id/systemout"
+        android:layout_margin="5dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/system_out"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/OKsystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/systemin"
+        android:layout_alignBottom="@+id/systemin"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_send_black" />
+
+    <TextView
+        android:id="@+id/lblsystemin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/systemin"
+        android:layout_margin="5dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/system_in"
+        android:textSize="16sp" />
+
+</RelativeLayout>

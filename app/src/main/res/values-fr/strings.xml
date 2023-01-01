@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Arithmo</string>
+    <string name="layout_name">Solveur Maths</string>
+    <string name="hello_world">Bonjour tout le monde!</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="matrix">Matrice</string>
+    <string name="result">Résultat</string>
+    <string name="main_hint">Saisir une équation</string>
+    <string name="curve_hint">Saisir une fonction</string>
+    <string name="scalar_hint">Saisir un scalaire</string>
+    <string name="text_example">
+        Exemples :
+        \n
+        \n\u2022 2X²-7X-4 = 0
+        \nX\u2080 = -1÷2
+        \nX\u2081 = 4
+        \n
+        \n\u2022 16 : 2FC
+        \n= 1011111100 (base 2)
+    </string>
+    <string name="system_in">Système linéaire :</string>
+    <string name="system_out">Valeurs trouvées :</string>
+    <string name="help_text">
+        Arithmo est un multi-outil gratuit des maths au lycée.
+        \nEquations - Fonctions - Systèmes linéaires - Matrices
+        \n
+        \n\u2022 Résolution d\'équations de n\'importe quel degré
+        \n
+        \nSaisissez l\'équation avec l\'inconnue (une lettre Majuscule) et sans oublier le signe (=) puis lancer le processus. Vous pouvez activez la recherche de toutes les solutions à l\'intérieur de l\'intervalle spécifié. L\'intervalle par défaut est compris entre -1110 et 1110.
+        \nExemples :
+        \nX²-5√X = 2X-2 → X = 4.0
+        \nsin(2X) = cosX → X = 30.0
+        \n
+        \n\u2022 Passage d\'un système de numération à un autre
+        \n
+        \nChoisissez la base arithmétique de départ en l\'écrivant avant le nombre séparés par deux points (:) et choisissez ensuite la base d\'arrivée en faisant défiler la barre déroulante. Le système décimal est le système par défaut.
+        \nExemples :
+        \n2022 → 11111100110 (base 2)
+        \n16:F3C → 3900
+        \n
+        \n\u2022 Conversion des unités de longueur, de temps, de masse et de vitesse
+        \n
+        \nDans le formulaire dédié, vous devez saisir les valeurs à convertir en précisant l\'unité source et l\'unité cible.
+        \nExemples :
+        \n2 km → 2000.0 m
+        \n6 m·s¯¹ → 2.5 km·h¯¹
+        \n
+        \n\u2022 Calcul matriciel, comatrice et déterminant
+        \n
+        \nDans le formulaire dédié, saisissez les données (la matrice A et la matrice B ou un scalaire) puis choisissez une opération à appliquer. Le résultat s\'affiche dans l\'onglet C.
+        \nExemple :
+        \n1 2\u00A0\u00A0\u00A0\u00A01 2 3\u00A0\u00A0\u00A0\u00A0\u00A0\u00A09 12 15
+        \n3 7 × 4 5 6 = 19 26 33
+        \n5 6\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A029 40 51
+        \n
+        \n\u2022 Représentation graphique de fonctions, dérivation et intégration
+        \n
+        \nDans le formulaire dédié, saisissez l\'expression de f en fonction d\'une variable (une lettre Majuscule) puis lancez l\'étude de la fonction.
+        \nExemple :
+        \nf(X) = X\u00B3-5X → f\'(2) = 7.0
+        \n
+        \n\u2022 Réalisation du calcul scientifique ordinaire
+        \n
+        \nExprimez le résultat sous forme de fraction irréductible en cochant la case dédiée.
+        \nExemples :
+        \n1.25 → 5÷4
+        \n3/9 → 1÷3
+		\n
+		\nRécupérez les derniers résultats à travers les variables &amp;1, &amp;2, &amp;3, …, &amp;9 et calculez les formules de récurrence.
+		\nExemple : (suite de Fibonacci)
+		\n1 → 1
+		\n2 → 2
+		\n&amp;1+&amp;2 → 3
+		\n&amp;1+&amp;2 → 5
+		\n&amp;1+&amp;2 → 8
+		\n…
+		\n
+		\nUtilisez les constantes mathématiques π et e dans vos équations ou calculs.
+		\nExemples :
+        \nX/2 = π → X = 6.283185307179586
+        \ne+2 → 4.718281828459045
+		\n
+		\n\u2022 Syntaxe des fonctions prises en charge
+		\n
+		\nLogarithme naturel (lnX)
+		\nExponentielle (expX) et Logarithme décimal (logX)
+		\nCosinus (cosX) et Arccosinus (acosX)
+		\nSinus (sinX) et Arcsinus (asinX)
+		\nTangente (tanX) et Arctangente (atanX)
+		\nCosinus hyperbolique (coshX)
+		\nSinus hyperhyperbolique (sinhX)
+		\nTangente hyperbolique (tanhX)
+		\nPuissance (X^Y) et Radical (Y\u2206X)
+		\nPuissance carrée (X²) et Racine carrée (\u221AX)
+		\nReste de la division (X\\Y) et Pourcentage (X%)
+		\nSommation (X#) et Factorielle (X!)
+		\nValeur absolue (@X ou [X])
+		\n
+		\n© 2022 Hassen Major
+	</string>
+    <string name="hypermail"><a href="mailto:hassenmajor@gmail.com">Cliquez-ici pour écrire au developpeur !</a></string>
+    <string name="hyperlien"><a href="https://play.google.com/store">Evaluez l\'application sur Google Play !</a></string>
+    <string name="title_activity_help">À propos</string>
+    <string name="title_activity_main">Solveur d\'équations</string>
+    <string name="title_activity_matrix">Calcul matriciel</string>
+    <string name="title_activity_unit">Convertisseur des unités</string>
+    <string name="title_activity_curve">Etude de fonctions</string>
+    <string name="title_activity_system">Solveur de systèmes linéaires</string>
+    <string name="title_activity_base">Bases arithmétiques</string>
+    <string name="title_exit">Quitter</string>
+    <string name="fraction">Fraction</string>
+    <string name="all">Toutes les solutions</string>
+    <string name="interval">Intervalle</string>
+    <string name="degree">Degré</string>
+    <string name="radian">Radian</string>
+    <string name="time">Temps à convertir</string>
+    <string name="length">Longueur à convertir</string>
+    <string name="speed">Vitesse à convertir</string>
+    <string name="mass">Masse à convertir</string>
+    <string name="positive">Contactez-nous</string>
+    <string name="neutral">Evaluez l\'appli sur le Play Store</string>
+    <string name="negative">Retour</string>
+    <string name="text_copied">Champ solutions copié</string>
+
+</resources>

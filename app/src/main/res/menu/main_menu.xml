@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.major.app.FullActivity" >
+
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_help_outline"
+        android:showAsAction="ifRoom"
+        android:title="@string/title_activity_help" />
+
+    <!--item
+        android:id="@+id/action_main"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_activity_main"/>
+    <item
+        android:id="@+id/action_system"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_activity_system"/>
+    <item
+        android:id="@+id/action_matrix"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_activity_matrix"/>
+    <item
+        android:id="@+id/action_curve"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_activity_curve"/>
+    <item
+        android:id="@+id/action_unit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_activity_unit"/-->
+
+</menu>

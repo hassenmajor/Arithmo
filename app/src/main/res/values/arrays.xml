@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="matrix_list">
+        <item>Matrix Addition A + B</item>
+        <item>Matrix Subtraction A - B</item>
+		<item>Matrix Multiplication A × B</item>
+		<item>Multiplication by a Scalar \u03BB × B</item>
+		<item>Matrix Inverse A¯\u00B9</item>
+		<item>Co-matrix com(A)</item>
+    </string-array>
+    
+    <string-array name="base_list">
+        <item>Decimal base (10)</item>
+		<item>Binary (2)</item>
+		<item>Tetral (4)</item>
+		<item>Octal (8)</item>
+		<item>Hexadecimal (16)</item>
+		<item>Base32</item>
+    </string-array>
+    
+</resources>

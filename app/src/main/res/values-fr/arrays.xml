@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="matrix_list">
+		<item>Somme des matrices A + B</item>
+		<item>Différence des matrices A - B</item>
+		<item>Produit des matrices A × B</item>
+		<item>Produit par un scalaire \u03BB × B</item>
+		<item>Matrice inverse A¯\u00B9</item>
+		<item>Comatrice com(A)</item>
+	</string-array>
+
+	<string-array name="base_list">
+		<item>Base décimale (10)</item>
+		<item>Binaire (2)</item>
+		<item>Tétral (4)</item>
+		<item>Octal (8)</item>
+		<item>Hexadécimal (16)</item>
+		<item>Base32</item>
+	</string-array>
+
+</resources>

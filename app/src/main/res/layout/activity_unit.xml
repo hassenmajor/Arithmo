@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CouleurFont"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.major.arithmo.UnitActivity" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/hautout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/timeout"
+                    android:layout_alignLeft="@+id/hautin"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/timeout" />
+
+                <Spinner
+                    android:id="@+id/hautin"
+                    style="@android:style/Widget.Material.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/OKdeep"
+                    android:layout_alignTop="@+id/timein"
+                    android:layout_alignBottom="@+id/timein"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-150dp" />
+
+                <EditText
+                    android:id="@+id/timein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/texttime"
+                    android:layout_below="@+id/texttime"
+                    android:layout_toLeftOf="@+id/hautout"
+                    android:ems="10"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/timeout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/timein"
+                    android:layout_below="@+id/timein"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/spacein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/timeout"
+                    android:layout_below="@+id/textspace"
+                    android:ems="10"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/spaceout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/spacein"
+                    android:layout_below="@+id/spacein"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <Spinner
+                    android:id="@+id/basin"
+                    style="@android:style/Widget.Material.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/hautout"
+                    android:layout_alignTop="@+id/spacein"
+                    android:layout_alignBottom="@+id/spacein"
+                    android:layout_alignParentRight="true" />
+
+                <Spinner
+                    android:id="@+id/basout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/spaceout"
+                    android:layout_alignLeft="@+id/basin"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/spaceout" />
+
+                <EditText
+                    android:id="@+id/speedin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textspeed"
+                    android:layout_alignRight="@+id/spaceout"
+                    android:layout_below="@+id/textspeed"
+                    android:ems="10"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/speedout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/speedin"
+                    android:layout_alignRight="@+id/speedin"
+                    android:layout_below="@+id/speedin"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <Spinner
+                    android:id="@+id/highin"
+                    style="@android:style/Widget.Material.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/speedin"
+                    android:layout_alignBottom="@+id/speedin"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/speedin" />
+
+                <Spinner
+                    android:id="@+id/highout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/speedout"
+                    android:layout_alignLeft="@+id/highin"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/speedout" />
+
+                <TextView
+                    android:id="@+id/textspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/spaceout"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/speed" />
+
+                <TextView
+                    android:id="@+id/textspace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/timeout"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/length" />
+
+                <TextView
+                    android:id="@+id/texttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/OKdeep"
+                    android:text="@string/time" />
+
+                <TextView
+                    android:id="@+id/textmass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/speedout"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/mass" />
+
+                <EditText
+                    android:id="@+id/massin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/speedout"
+                    android:layout_below="@+id/textmass"
+                    android:ems="10"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/massout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/massin"
+                    android:layout_below="@+id/massin"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <Spinner
+                    android:id="@+id/lowin"
+                    style="@android:style/Widget.Material.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/massin"
+                    android:layout_alignBottom="@+id/massin"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/massin" />
+
+                <Spinner
+                    android:id="@+id/lowout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/massout"
+                    android:layout_alignLeft="@+id/lowin"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/massout" />
+
+                <ImageView
+                    android:id="@+id/OKdeep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_sync" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
